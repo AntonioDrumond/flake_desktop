@@ -26,7 +26,7 @@
 
   fileSystems."/storage" =
     { device = "/dev/disk/by-uuid/57ad4be2-d4aa-478b-8d2a-f4356922dff3";
-      fstype = "ext4";
+      fsType = "ext4";
     };
 
   swapDevices =
