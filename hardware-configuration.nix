@@ -21,7 +21,7 @@
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/68AB-BF5D";
       fsType = "vfat";
-      options = [ "fmask=0077" "dmask=0077" ];
+      # options = [ "fmask=0077" "dmask=0077" ];
     };
 
   fileSystems."/home/antonio/Disks/storage" =
