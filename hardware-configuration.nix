@@ -27,7 +27,6 @@
   fileSystems."/home/antonio/Disks/storage" =
     { device = "/dev/disk/by-uuid/57ad4be2-d4aa-478b-8d2a-f4356922dff3";
       fsType = "ext4";
-      options = [ "uid=1000" "gid=100" ];
     };
 
   swapDevices =
