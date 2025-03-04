@@ -40,11 +40,11 @@
 
   # Configure keymap in X11
   services.xserver = {
-    xkb.layout = "us";
+    xkb.layout = "br";
   };
 
   # Configure console keymap
-  console.keyMap = "us";
+  console.keyMap = "br-abnt2";
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
