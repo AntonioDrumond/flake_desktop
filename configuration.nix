@@ -15,7 +15,7 @@
   # Set your time zone.
   time = {
     timeZone = "America/Sao_Paulo";
-    hardwareClockInLocalTime = false;
+    hardwareClockInLocalTime = true;
   };
 
   # Select internationalisation properties.
