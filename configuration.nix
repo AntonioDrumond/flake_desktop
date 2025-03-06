@@ -14,7 +14,8 @@
 
   # Set your time zone.
   time = {
-    timeZone = "America/Bahia";
+    # timeZone = "America/Bahia";
+    timeZone = "Europe/Dublin";
     hardwareClockInLocalTime = true;
   };
 
