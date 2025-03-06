@@ -14,7 +14,7 @@
 
   # Set your time zone.
   time = {
-    timeZone = "America/Sao_Paulo";
+    timeZone = "America/Bahia";
     hardwareClockInLocalTime = true;
   };
 
