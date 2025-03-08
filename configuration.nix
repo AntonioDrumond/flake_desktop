@@ -188,7 +188,6 @@
     #Other
     kdePackages.kcalc
     cava
-    floorp
     librewolf-bin
     jetbrains-mono
   ];
