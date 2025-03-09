@@ -149,6 +149,7 @@
     vim
     git
     wezterm
+    ghostty
     fzf
     zip
     unzip
