@@ -194,6 +194,7 @@
     cava
     librewolf-bin
     jetbrains-mono
+    floorp
   ];
 
   environment.localBinInPath = true;
