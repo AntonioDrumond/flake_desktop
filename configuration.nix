@@ -170,6 +170,7 @@
     #Non raw text
     obsidian
     foliate
+    vscode
 
     #Torrenting and stuff
     # qbittorrent
