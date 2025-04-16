@@ -34,18 +34,17 @@
     LC_TIME = "pt_BR.UTF-8";
   };
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  services.xserver.wacom.enable = true;
-
-  # Enable the KDE Plasma Desktop Environment.
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
-
-  # Configure keymap in X11
-  services.xserver = {
-    # xkb.layout = "br";
-    xkb.layout = "us";
+  services = {
+    xserver = {
+      enable = true;
+      wacom.enable = true;
+      xkb.layout = "us";
+    };
+    displayManager.sddm = {
+      enable = true;
+      autoNumlock = true;
+    };
+    desktopManager.plasma6.enable = true;
   };
 
   # Configure console keymap
@@ -189,6 +188,7 @@
     ventoy-full
     gparted
     fan2go
+    radeontop
 
     #Other
     kdePackages.kcalc
