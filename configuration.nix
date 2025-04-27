@@ -189,6 +189,7 @@
     gparted
     fan2go
     radeontop
+    btop
 
     #Other
     kdePackages.kcalc
@@ -196,6 +197,7 @@
     librewolf-bin
     jetbrains-mono
     floorp
+    passmark-performancetest
   ];
 
   environment.localBinInPath = true;
