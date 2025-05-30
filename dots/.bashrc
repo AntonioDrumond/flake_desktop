@@ -10,6 +10,7 @@ alias rebBoot='sudo nixos-rebuild boot --flake ~/repos/flake_desktop/'
 
 # Other
 alias la='ls -a'
+alias radeontop='radeontop --color'
 
 # Ricing
 alias imgcat='wezterm imgcat'
