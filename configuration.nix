@@ -198,6 +198,7 @@
     jetbrains-mono
     floorp
     passmark-performancetest
+    mars-mips
   ];
 
   environment.localBinInPath = true;
