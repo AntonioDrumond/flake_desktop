@@ -19,7 +19,7 @@
   time = {
     timeZone = "America/Sao_Paulo";
     # timeZone = "Europe/Dublin";
-    hardwareClockInLocalTime = true;
+    hardwareClockInLocalTime = false;
   };
 
   # Select internationalisation properties.
