@@ -39,6 +39,7 @@
       enable = true;
       wacom.enable = true;
       xkb.layout = "us";
+      videoDrivers = [ "amdgpu" ];
     };
     displayManager.sddm = {
       enable = true;
@@ -190,6 +191,7 @@
     fan2go
     radeontop
     btop
+    passmark-performancetest
 
     #Other
     kdePackages.kcalc
@@ -197,8 +199,8 @@
     librewolf-bin
     jetbrains-mono
     floorp
-    passmark-performancetest
     mars-mips
+    blender-hip
   ];
 
   environment.localBinInPath = true;
