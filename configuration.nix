@@ -17,9 +17,9 @@
 
   # Set your time zone.
   time = {
-    timeZone = "America/Sao_Paulo";
-    # timeZone = "Europe/Dublin";
-    hardwareClockInLocalTime = false;
+    # timeZone = "America/Sao_Paulo";
+    timeZone = "Europe/Dublin";
+    hardwareClockInLocalTime = true;
   };
 
   # Select internationalisation properties.
