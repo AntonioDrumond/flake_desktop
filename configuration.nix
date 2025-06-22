@@ -140,7 +140,10 @@
   };
 
   # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+    permittedInsecurePackages = [ "ventoy-1.1.05" ];
+  };
 
   # Global system packages
   environment.systemPackages = with pkgs; [
