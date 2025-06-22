@@ -186,7 +186,7 @@
     spice
 
     #Hardware/Libs
-    ventoy-full
+    ventoy
     gparted
     fan2go
     radeontop
