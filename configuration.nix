@@ -195,6 +195,9 @@
     radeontop
     btop
     passmark-performancetest
+    amdgpu_top
+    amdvlk
+    mesa
 
     #Other
     kdePackages.kcalc
