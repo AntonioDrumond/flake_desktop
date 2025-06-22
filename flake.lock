@@ -259,16 +259,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1740932899,
-        "narHash": "sha256-F0qDu2egq18M3edJwEOAE+D+VQ+yESK6YWPRQBfOqq8=",
+        "lastModified": 1750400657,
+        "narHash": "sha256-3vkjFnxCOP6vm5Pm13wC/Zy6/VYgei/I/2DWgW4RFeA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "1546c45c538633ae40b93e2d14e0bb6fd8f13347",
+        "rev": "b2485d56967598da068b5a6946dadda8bfcbcd37",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-24.11",
+        "ref": "nixos-25.05",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -309,11 +309,11 @@
         "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1740838916,
-        "narHash": "sha256-0EEc/bjOu1RKmVqI9091DRvjsOz66ubtlgP2nibziGE=",
+        "lastModified": 1744410894,
+        "narHash": "sha256-A0Cw5zDITeXOB2MykYrsES3k+xPVogmGZvZfapEs83U=",
         "owner": "AntonioDrumond",
         "repo": "nixvim",
-        "rev": "97cf0293b807a774c58d35a991027ab45d2045d7",
+        "rev": "613b1543ce4cfd32ae56a4c8ce3c8b5d9c1b9b94",
         "type": "github"
       },
       "original": {
