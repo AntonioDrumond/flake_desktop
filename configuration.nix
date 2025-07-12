@@ -17,9 +17,9 @@
 
   # Set your time zone.
   time = {
-    # timeZone = "America/Sao_Paulo";
+    timeZone = "America/Sao_Paulo";
     # timeZone = "Europe/Dublin";
-    timeZone = "Atlantic/Reykjavik";
+    # timeZone = "Atlantic/Reykjavik";
     hardwareClockInLocalTime = true;
   };
 
@@ -168,6 +168,7 @@
     eza # -> better to do in programs. but couldnt yet
     neofetch
     superfile
+    du-dust
 
     #Image stuff
     pix
