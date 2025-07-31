@@ -24,17 +24,17 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  /*
   fileSystems."/home/antonio/Disks/storage" =
-    { device = "/dev/disk/by-uuid/57ad4be2-d4aa-478b-8d2a-f4356922dff3";
+    { device = "/dev/disk/by-label/storage";
       fsType = "ext4";
     };
-  */
 
+/*
   fileSystems."/home/antonio/Disks/pirate" =
     { device = "/dev/disk/by-uuid/6756bf95-e86c-4d19-9a02-f2591766457e";
       fsType = "ext4";
     };
+*/
 
   swapDevices =
     [ { device = "/dev/disk/by-uuid/dc30a5c7-b31e-4f09-9417-ca3a44d0e491"; }
