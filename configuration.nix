@@ -60,6 +60,7 @@
         X11Forwarding = false;
         PermitRootLogin = "no";
       };
+    };
   };
 
   # Configure console keymap
