@@ -17,9 +17,9 @@
 
   # Set your time zone.
   time = {
-    timeZone = "America/Sao_Paulo";
+    # timeZone = "America/Sao_Paulo";
     # timeZone = "Europe/Dublin";
-    # timeZone = "Atlantic/Reykjavik";
+    timeZone = "Atlantic/Reykjavik";
     hardwareClockInLocalTime = true;
   };
 
@@ -50,6 +50,16 @@
       autoNumlock = true;
     };
     desktopManager.plasma6.enable = true;
+    openssh = {
+      enable = true;
+      ports = [ 22 ];
+      settings = {
+        PasswordAuthentication = true;
+        AllowUsers = null;
+        UseDns = true;
+        X11Forwarding = false;
+        PermitRootLogin = "no";
+      };
   };
 
   # Configure console keymap
@@ -152,6 +162,21 @@
     permittedInsecurePackages = [ "ventoy-1.1.05" ];
   };
 
+    fonts.packages = with pkgs; [
+        noto-fonts
+        noto-fonts-cjk-sans
+        noto-fonts-emoji
+        liberation_ttf
+        fira-code
+        fira-code-symbols
+        mplus-outline-fonts.githubRelease
+        dina-font
+        proggyfonts
+        jetbrains-mono
+        nerd-fonts.jetbrains-mono
+        font-awesome
+    ];
+
   # Global system packages
   environment.systemPackages = with pkgs; [
 
@@ -163,7 +188,7 @@
     fzf
     zip
     unzip
-    inputs.nixvim.packages.${pkgs.system}.default # NixVim
+    # inputs.nixvim.packages.${pkgs.system}.default # NixVim
 
     #CLI -> Pretty and shiny :D
     bat
