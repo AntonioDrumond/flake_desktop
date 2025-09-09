@@ -96,6 +96,13 @@
     options snd-intel-dspcfg dsp_driver=1
   '';
 
+    hardware.graphics = {
+        enable = true;
+        extraPackages = with pkgs; [
+            rocmPackages.clr.icd
+        ];
+    };
+
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
@@ -203,6 +210,7 @@
     pix
     rawtherapee
     krita
+    davinci-resolve
 
     #Non raw text
     obsidian
