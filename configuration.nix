@@ -167,8 +167,7 @@
   # Allow unfree packages
   nixpkgs.config = {
     allowUnfree = true;
-    permittedInsecurePackages = [ "ventoy-1.1.05" ];
-  };
+    permittedInsecurePackages = [ "ventoy-1.1.07" /*"qtwebengine-5.15.19"*/ ];
 
     fonts.packages = with pkgs; [
         noto-fonts
@@ -184,6 +183,7 @@
         nerd-fonts.jetbrains-mono
         font-awesome
     ];
+  };
 
   # Global system packages
   environment.systemPackages = with pkgs; [
@@ -192,7 +192,7 @@
     vim
     git
     wezterm
-    ghostty
+    kitty
     fzf
     zip
     unzip
@@ -215,7 +215,6 @@
     #Non raw text
     obsidian
     foliate
-    vscode
 
     #Torrenting and stuff
     # qbittorrent
@@ -236,7 +235,6 @@
     fan2go
     radeontop
     btop
-    passmark-performancetest
     amdgpu_top
     amdvlk
     mesa
@@ -244,9 +242,7 @@
     #Other
     kdePackages.kcalc
     cava
-    librewolf-bin
     jetbrains-mono
-    floorp
     mars-mips
     blender-hip
   ];
