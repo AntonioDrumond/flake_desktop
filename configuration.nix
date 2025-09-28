@@ -228,7 +228,6 @@
         # mullvad
 
         #Nonfree entertainment
-        stremio
         discord
         spotify
 
