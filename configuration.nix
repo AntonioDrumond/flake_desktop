@@ -61,6 +61,7 @@
                 PermitRootLogin = "no";
             };
         };
+        tailscale.enable = true;
         printing.enable = true;
         flatpak = {
             enable = true;
@@ -134,6 +135,12 @@
     programs = {
         # Firefox
         firefox.enable = true;
+
+        # Begone satan master of all deceit
+        nano.enable = false;
+
+        # Fish
+        fish.enable = true;
 
         # Steam
         steam = {
@@ -217,7 +224,7 @@
         pix
         rawtherapee
         krita
-        davinci-resolve
+        # davinci-resolve
 
         #Non raw text
         obsidian
@@ -251,6 +258,10 @@
         jetbrains-mono
         mars-mips
         blender-hip
+        pureref
+
+        # Gaming
+        prismlauncher
     ];
 
     environment.localBinInPath = true;
