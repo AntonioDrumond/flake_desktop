@@ -68,6 +68,7 @@
             packages = [
                 { appId = "net.waterfox.waterfox"; origin = "flathub"; }
                 { appId = "com.stremio.Stremio"; origin = "flathub"; }
+                { appId = "com.github.Matoking.protontricks"; origin = "flathub"; }
             ];
         };
     };
@@ -130,6 +131,7 @@
         packages = with pkgs; [
             kdePackages.kate
         ];
+        shell = pkgs.fish;
     };
 
     programs = {
@@ -149,6 +151,7 @@
             extraCompatPackages = with pkgs; [
                 proton-ge-bin
             ];
+            # protontricks.enable = true;
         };
 
         # Starship
