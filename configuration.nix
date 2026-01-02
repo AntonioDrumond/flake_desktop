@@ -106,6 +106,7 @@
 
     hardware.graphics = {
         enable = true;
+        enable32Bit = true;
         extraPackages = with pkgs; [
             rocmPackages.clr.icd
         ];
@@ -220,7 +221,7 @@
         eza # -> better to do in programs. but couldnt yet
         neofetch
         superfile
-        du-dust
+        dust
         yazi
 
         #Image stuff
@@ -252,7 +253,6 @@
         radeontop
         btop
         amdgpu_top
-        amdvlk
         mesa
 
         #Other

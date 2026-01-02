@@ -93,19 +93,10 @@ in {
                 enable = true;
                 extraDiagnostics.enable = true;
                 treesitter.enable = true;
-                format.type = "alejandra";
+                format.type = [ "alejandra" ];
                 lsp = {
-                    server = "nixd";
-                    package = pkgs.nixd;
-                    options = {
-                        # nixos.expr = (builtins.getFlake (builtins.toString ./.)).nixosConfigurations.${hostname}.options;
-                        # home-manager.expr = "(builtins.getFlake (builtins.toString ./.)).homeConfigurations.${username}@${hostname}.options";
-                        # nixos.expr = self.nixosConfigurations.${hostname}.options;
-                        # home-manager.expr = self.homeConfigurations."${username}@${hostname}".options;
-                        # nixos.expr = "/home/evolve/nix-config";
-                        # nixos.expr = "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.${hostname}.options";
-                        # home_manager.expr = "(builtins.getFlake (builtins.toString ./.)).homeConfigurations.\"${username}@${hostname}\".options";
-                    };
+                    servers = [ "nixd" ];
+                    # package = pkgs.nixd;
                 };
             };
 
@@ -134,7 +125,7 @@ in {
             typst.enable = false;
             rust = {
                 enable = true;
-                crates.enable = true;
+                extensions.crates-nvim.enable = true;
             };
 
             # Language modules that are not as common.

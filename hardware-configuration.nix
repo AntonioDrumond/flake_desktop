@@ -15,6 +15,7 @@
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/76c55056-a442-40bb-83da-d7a5c2fa96c2";
+    # { device = "/dev/disk/by-label/root";
       fsType = "ext4";
     };
 
@@ -28,13 +29,6 @@
     { device = "/dev/disk/by-label/storage";
       fsType = "ext4";
     };
-
-/*
-  fileSystems."/home/antonio/Disks/pirate" =
-    { device = "/dev/disk/by-uuid/6756bf95-e86c-4d19-9a02-f2591766457e";
-      fsType = "ext4";
-    };
-*/
 
   swapDevices =
     [ { device = "/dev/disk/by-uuid/dc30a5c7-b31e-4f09-9417-ca3a44d0e491"; }
