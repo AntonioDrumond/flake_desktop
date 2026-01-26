@@ -68,7 +68,6 @@
             packages = [
                 { appId = "net.waterfox.waterfox"; origin = "flathub"; }
                 { appId = "com.stremio.Stremio"; origin = "flathub"; }
-                { appId = "com.github.Matoking.protontricks"; origin = "flathub"; }
             ];
         };
     };
@@ -76,13 +75,6 @@
     # Configure console keymap
     # console.keyMap = "br-abnt2";
     console.keyMap = "us";
-
-
-    # Bluetooth
-    hardware.bluetooth = {
-        enable = true;
-        powerOnBoot = true;
-    };
 
     # Enable sound
     security.rtkit.enable = true;
@@ -232,7 +224,7 @@
 
         #Non raw text
         obsidian
-        foliate
+        mcomix
 
         #Torrenting and stuff
         # qbittorrent
@@ -275,6 +267,6 @@
     # networking.firewall.enable = false;
 
     # DO NOT CHANGE
-    system.stateVersion = "24.11"; # Did you read the comment?
+    system.stateVersion = "26.05"; # Did you read the comment?
 
 }
