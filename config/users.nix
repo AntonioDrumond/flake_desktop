@@ -16,7 +16,7 @@
         shell = pkgs.fish;
     };
 
-    networking.hostName = "nixos";
+    networking.hostName = "antonio-desktop";
     networking.networkmanager.enable = true;
 
     services.openssh = {
@@ -29,6 +29,6 @@
             X11Forwarding = false;
             PermitRootLogin = "no";
         };
+        tailscale.enable = true;
     };
-    services.tailscale.enable = true;
 }

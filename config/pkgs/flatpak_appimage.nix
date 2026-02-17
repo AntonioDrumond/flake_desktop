@@ -7,4 +7,8 @@
             { appId = "com.stremio.Stremio"; origin = "flathub"; }
         ];
     };
+    programs.appimage = {
+        enable = true;
+        binfmt = true;
+    };
 }

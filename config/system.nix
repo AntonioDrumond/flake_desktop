@@ -46,5 +46,6 @@
         "flakes"
     ];
 
+    # DO NOT CHANGE
     system.stateVersion = "26.05";
 }

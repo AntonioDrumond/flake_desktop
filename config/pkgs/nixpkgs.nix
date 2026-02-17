@@ -46,7 +46,7 @@
         yazi
         gemini-cli
 
-        # Hyprland
+        #Hyprland
         waybar
         hyprcursor
         hyprshot
