@@ -19,15 +19,17 @@
     networking.hostName = "antonio-desktop";
     networking.networkmanager.enable = true;
 
-    services.openssh = {
-        enable = true;
-        ports = [ 22 ];
-        settings = {
-            PasswordAuthentication = true;
-            AllowUsers = null;
-            UseDns = true;
-            X11Forwarding = false;
-            PermitRootLogin = "no";
+    services = {
+        openssh = {
+            enable = true;
+            ports = [ 22 ];
+            settings = {
+                PasswordAuthentication = true;
+                AllowUsers = null;
+                UseDns = true;
+                X11Forwarding = false;
+                PermitRootLogin = "no";
+            };
         };
         tailscale.enable = true;
     };
