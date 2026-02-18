@@ -64,6 +64,7 @@
         #Non raw text
         obsidian
         mcomix
+        pdfslicer
 
         #Torrenting and stuff
         # qbittorrent
