@@ -13,12 +13,8 @@
         "modules-center": ["clock"],
 
         "modules-right": [
-            "bluetooth",
-            "network",
             "custom/coffee",
             "pulseaudio", 
-            "backlight",
-            "battery",
         ],
 
         "hyprland/workspaces": {
