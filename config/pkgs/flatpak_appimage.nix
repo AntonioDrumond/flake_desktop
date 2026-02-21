@@ -3,8 +3,9 @@
     services.flatpak = {
         enable = true;
         packages = [
-            { appId = "net.waterfox.waterfox"; origin = "flathub"; }
             { appId = "com.stremio.Stremio"; origin = "flathub"; }
+            { appId = "net.waterfox.waterfox"; origin = "flathub"; }
+            { appId = "com.spotify.Client"; origin = "flathub"; }
         ];
     };
     programs.appimage = {

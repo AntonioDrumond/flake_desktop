@@ -47,7 +47,8 @@
         },
 
         "clock": {
-            "timezone": "America/Sao_Paulo",
+            // "timezone": "America/Sao_Paulo",
+            "timezone": "Atlantic/Reykjavik",
             "tooltip": false,
             "format": "{:%A %d - %H:%M}",
             "interval": 1,

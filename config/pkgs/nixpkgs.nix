@@ -72,7 +72,6 @@
 
         #Nonfree entertainment
         discord
-        spotify
 
         #Virtual Machine
         quickemu
