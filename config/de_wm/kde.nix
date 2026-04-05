@@ -13,4 +13,5 @@
         };
         desktopManager.plasma6.enable = true;
     };
+    security.pam.services.sddm.kwallet.enable = false;
 }

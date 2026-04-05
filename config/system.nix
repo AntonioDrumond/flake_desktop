@@ -21,7 +21,7 @@
 
     hardware = {
         # Drawing tablet driver
-        opentabletdriver.enable = true;
+        opentabletdriver.enable = false;
         # Brightness control
         brillo.enable = true;
         graphics = {

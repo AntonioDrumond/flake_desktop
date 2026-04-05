@@ -2,7 +2,7 @@
 {
     nixpkgs.config = {
         allowUnfree = true;
-        permittedInsecurePackages = [ "ventoy-1.1.07" /*"qtwebengine-5.15.19"*/ ];
+        permittedInsecurePackages = [ "ventoy-1.1.10" /*"qtwebengine-5.15.19"*/ ];
     };
 
     fonts.packages = with pkgs; [
@@ -25,6 +25,7 @@
         #CLI -> Essential
         vim
         git
+        gh
         wezterm
         kitty
         fzf
@@ -45,13 +46,14 @@
         dust
         yazi
         gemini-cli
+        codex
 
         #Hyprland
         waybar
         hyprcursor
         hyprshot
         hyprpaper
-        hypridle
+        # hypridle
         rofi
 
         #Image stuff
@@ -72,6 +74,7 @@
 
         #Nonfree entertainment
         discord
+        deadlock-mod-manager
 
         #Virtual Machine
         quickemu
@@ -95,7 +98,8 @@
         cava
         jetbrains-mono
         mars-mips
-        blender-hip
+        # blender-hip
+        pkgsRocm.blender
         pureref
 
         # Gaming

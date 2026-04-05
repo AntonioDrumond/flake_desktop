@@ -1,10 +1,10 @@
 { ... }:
 {
     time = {
-        # timeZone = "America/Sao_Paulo";
+        timeZone = "America/Sao_Paulo";
         # timeZone = "Europe/Dublin";
-        timeZone = "Atlantic/Reykjavik";
-        hardwareClockInLocalTime = true;
+        # timeZone = "Atlantic/Reykjavik";
+        # hardwareClockInLocalTime = true;
     };
 
     i18n.defaultLocale = "en_US.UTF-8";
