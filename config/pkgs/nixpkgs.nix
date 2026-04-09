@@ -40,7 +40,6 @@
         bat
         tree
         eza # -> better to do in programs. but couldnt yet
-        neofetch
         fastfetch
         superfile
         dust
@@ -66,7 +65,6 @@
         #Non raw text
         obsidian
         mcomix
-        pdfslicer
 
         #Torrenting and stuff
         # qbittorrent
