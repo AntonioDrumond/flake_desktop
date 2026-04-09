@@ -2,7 +2,7 @@
     description = "NixOS System Flake";
 
     inputs = {
-        stable.url = "github:NixOS/nixpkgs/nixos-25.05";
+        stable.url = "github:NixOS/nixpkgs/nixos-25.11";
         nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
         # nixvim.url = "github:AntonioDrumond/nixvim";
@@ -23,8 +23,8 @@
             nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
                 specialArgs = { inherit inputs; };
                 modules = [
-                    # Import configuration.nix file
-                    ./configuration.nix
+                    # Import configuration
+                    ./config
                     # NVF module and config file
                     nvf.nixosModules.default
                     ./nvf.nix

@@ -1,0 +1,116 @@
+{
+    "layer": "overlay",
+        "position": "top",
+        "margin-bottom": -10,
+        "spacing" : 0,
+
+        "modules-left": [
+            "hyprland/workspaces",
+            "cpu",
+            "memory"
+        ],
+
+        "modules-center": ["clock"],
+
+        "modules-right": [
+            "custom/coffee",
+            "pulseaudio", 
+        ],
+
+        "hyprland/workspaces": {
+            "format": "{name}: {icon}",
+            "format-icons": {
+                "active": "",
+                "default": ""
+            }
+        },
+
+        "backlight": {
+            // "format": "{icon}",
+            "format": "{icon} : {percent}%",
+            "format-icons": ["","󰃜", "󰃛", "󰃞","󰃝","󰃟","󰃠"],
+            "tooltip-format": "{percent}%"
+        },
+
+        "bluetooth": {
+            "format": "󰂲",
+            "format-on": "{icon}",
+            "format-off": "{icon}", 
+            "format-connected":"{icon}",
+            "format-icons":{
+                "on":"󰂯",
+                "off": "󰂲",
+                "connected": "󰂱",
+            },
+            "on-click": "blueman-manager",
+            "tooltip-format-connected":"{device_enumerate}"
+        },
+
+        "clock": {
+            // "timezone": "America/Sao_Paulo",
+            "timezone": "Atlantic/Reykjavik",
+            "tooltip": false,
+            "format": "{:%A %d - %H:%M}",
+            "interval": 1,
+            "on-click": "kitty --class \"cal\" /home/antonio/.config/waybar/cal",
+        },
+
+        "network": {
+            "format-wifi": "󰤢",
+            "format-ethernet": "󰈀",
+            "format-disconnected": "󰤠",
+            "interval": 5,
+            "tooltip-format": "{essid} ({signalStrength}%)",
+            //"on-click": "nm-connection-editor"
+            "on-click": "kitty --class \"nmtui\" nmtui"
+        },
+
+        "cpu": {
+            "interval": 5,
+            "format": " {usage:>2}%",
+            "on-click": "kitty --class \"btop\" btop -p 1"
+        },
+
+        "memory": {
+            "interval": 5,
+            "format": "  {used:0.1f}/{total:0.1f}",
+            "tooltip-format": "Memory",
+            "on-click": "kitty --class \"btop\" btop -p 2"
+        },
+
+        "pulseaudio": {
+            "format": "{icon} {volume}%",
+            "format-muted": "",
+            "format-icons": {
+                "default": ["", "", " "]
+            },
+            "on-click": "pavucontrol"
+        },
+
+        "battery": {
+            "interval":5,
+            "states": {
+                // "good": 95,
+                "warning": 30,
+                "critical": 15
+            },
+            "format": "{icon} {capacity}%",
+            "format-full": "{icon} {capacity}%",
+            "format-charging": " {capacity}%",
+            "format-plugged": " {capacity}%",
+            "format-alt": "{icon} {time}",
+            // "format-good": "", // An empty format will hide the module
+            // "format-full": "",
+            "format-icons": ["󰁻", "󰁼", "󰁽", "󰂀", "󰁹"],
+            //"on-click": "kitty --class \"auto-cpufreq\" sudo auto-cpufreq --monitor"
+        },
+
+        "custom/coffee": {
+            "tooltip": false,
+            "format": "{icon}",
+            "format-icons": ["󰅶"],
+            "on-click": "/home/antonio/.config/waybar/coffee",
+            "return-type": "json",
+            "exec": "/home/antonio/.config/waybar/coffee -s",
+        },
+}
