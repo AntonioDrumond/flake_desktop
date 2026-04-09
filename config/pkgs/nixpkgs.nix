@@ -63,7 +63,7 @@
         # davinci-resolve
 
         #Non raw text
-        obsidian
+        # obsidian
         mcomix
 
         #Torrenting and stuff
