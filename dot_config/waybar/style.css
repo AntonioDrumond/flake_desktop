@@ -131,13 +131,9 @@
 
 #bluetooth {
   margin-left: 0px; 
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
 }
 
 #battery {
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
   margin-right: 7px;
 }
 
@@ -154,7 +150,10 @@
 }
 
 #pulseaudio {
+  margin: 5px 7px 5px 0px; /* 5px top/bottom margin, 0px left/right (base for individual control) */
   color: #ffffff;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 #backlight {
   color: #ffffff;
@@ -193,9 +192,13 @@
 
 #custom-coffee.ON {
     color: #f7f7f7;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 #custom-coffee.OFF {
     color: #888888;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 
 /* --- Tooltip Styles --- */

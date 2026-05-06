@@ -29,4 +29,9 @@ if status is-interactive
 
     ## Completions
     complete -c mkboiler -a "default.nix shell.nix nix_module mod.nix module.nix c cc cplusplus c++ cpp python13 rustshell rustShell rust_shell icedshell iced_shell icedShell" -f
+
+    ## Binds
+    function fish_user_key_bindings
+        bind \ez 'fg 2>/dev/null; commandline -f repaint'
+    end
 end

@@ -124,7 +124,7 @@ inputs.nvf.nixosModules.default
                     html.enable = maxConfig;
                     sql.enable = true;
                     kotlin.enable = false;
-                    ts.enable = false;
+                    typescript.enable = false;
                     go.enable = true;
                     zig.enable = false;
                     typst.enable = false;
@@ -148,7 +148,6 @@ inputs.nvf.nixosModules.default
                     ruby.enable = false;
                     fsharp.enable = false;
 
-                    tailwind.enable = false;
                     svelte.enable = false;
                 };
 

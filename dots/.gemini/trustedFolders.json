@@ -1,4 +1,7 @@
 {
   "/home/antonio/.gemini": "TRUST_FOLDER",
-  "/home/antonio/repos/flake_desktop/syncing_scripts": "DO_NOT_TRUST"
+  "/home/antonio/repos/flake_desktop/syncing_scripts": "DO_NOT_TRUST",
+  "/home/antonio/Desktop/work": "TRUST_FOLDER",
+  "/home/antonio/Desktop/nanvix": "TRUST_FOLDER",
+  "/home/antonio/repos/oneapi/learning_sycl/04_cart_tree": "TRUST_FOLDER"
 }
