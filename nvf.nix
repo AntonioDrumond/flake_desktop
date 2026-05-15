@@ -332,6 +332,11 @@ inputs.nvf.nixosModules.default
                     toggleterm = {
                         enable = true;
                         lazygit.enable = true;
+                        setupOpts = {
+                            direction = "float";
+                            shell = "fish";
+                            winbar.enabled = false;
+                        };
                     };
                 };
 
