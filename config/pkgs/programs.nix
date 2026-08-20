@@ -16,5 +16,10 @@
             ];
             # protontricks.enable = true;
         };
+
+        obs-studio = {
+            enable = true;
+            enableVirtualCamera = true;
+        };
     };
 }
