@@ -2,7 +2,7 @@
 {
     nixpkgs.config = {
         allowUnfree = true;
-        permittedInsecurePackages = [ "ventoy-1.1.12" /*"qtwebengine-5.15.19"*/ ];
+        permittedInsecurePackages = [ "ventoy-1.1.17" /*"qtwebengine-5.15.19"*/ ];
     };
 
     fonts.packages = with pkgs; [
@@ -44,8 +44,8 @@
         superfile
         dust
         yazi
-        gemini-cli
         codex
+        antigravity-cli
 
         #Hyprland
         waybar

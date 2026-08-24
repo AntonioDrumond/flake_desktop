@@ -170,6 +170,8 @@ inputs.nvf.nixosModules.default
                         enable = true;
                         # theme = "iceberg_dark"; # "catppuccin";
                         theme = "catppuccin";
+                        integrations.breadcrumbs.nvim-navic.enable = false;
+                        integrations.breadcrumbs.navbuddy.enable = false;
                     };
                 };
 
@@ -267,11 +269,6 @@ inputs.nvf.nixosModules.default
                     gitsigns.codeActions.enable = false; # throws an annoying debug message
                 };
 
-                minimap = {
-                    minimap-vim.enable = false;
-                    codewindow.enable = maxConfig; # lighter, faster, and uses lua for configuration
-                };
-
                 dashboard = {
                     dashboard-nvim.enable = false;
                     alpha.enable = maxConfig;
@@ -346,10 +343,6 @@ inputs.nvf.nixosModules.default
                     colorizer.enable = false;
                     modes-nvim.enable = false; # bad
                     illuminate.enable = true;
-                    breadcrumbs = {
-                        enable = maxConfig;
-                        navbuddy.enable = maxConfig;
-                    };
                     smartcolumn = {
                         enable = false;
                         setupOpts.custom_colorcolumn = {
