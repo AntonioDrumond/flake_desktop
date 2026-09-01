@@ -100,6 +100,7 @@
         pkgsRocm.blender
         pureref
         quartus-prime-lite
+        fokus
 
         # Gaming
         prismlauncher
