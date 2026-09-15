@@ -101,7 +101,6 @@
         # blender-hip
         pkgsRocm.blender
         pureref
-        quartus-prime-lite
         fokus
 
         # Gaming

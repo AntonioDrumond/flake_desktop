@@ -169,7 +169,7 @@ inputs.nvf.nixosModules.default
                     lualine = {
                         enable = true;
                         # theme = "iceberg_dark"; # "catppuccin";
-                        theme = "catppuccin";
+                        setupOpts.theme = "catppuccin";
                         integrations.breadcrumbs.nvim-navic.enable = false;
                         integrations.breadcrumbs.navbuddy.enable = false;
                     };
