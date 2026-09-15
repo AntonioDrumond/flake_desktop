@@ -46,6 +46,8 @@
         yazi
         codex
         antigravity-cli
+        claude-code
+        claude-monitor
 
         #Hyprland
         waybar
@@ -68,7 +70,7 @@
 
         #Torrenting and stuff
         # qbittorrent
-        # mullvad
+        proton-vpn
 
         #Nonfree entertainment
         discord
