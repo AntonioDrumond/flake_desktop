@@ -85,7 +85,7 @@
         gparted
         fan2go
         radeontop
-        btop
+        btop-rocm
         amdgpu_top
         mesa
         pavucontrol
