@@ -2,7 +2,7 @@
 {
     nixpkgs.config = {
         allowUnfree = true;
-        permittedInsecurePackages = [ "ventoy-1.1.17" /*"qtwebengine-5.15.19"*/ ];
+        permittedInsecurePackages = [ "ventoy-1.1.17" "ventoy-1.1.12" /*"qtwebengine-5.15.19"*/ ];
     };
 
     fonts.packages = with pkgs; [
@@ -45,7 +45,7 @@
         dust
         yazi
         codex
-        antigravity-cli
+        #antigravity-cli
         claude-code
         claude-monitor
 
@@ -100,8 +100,9 @@
         mars-mips
         # blender-hip
         pkgsRocm.blender
-        pureref
+        # pureref
         fokus
+        google-chrome
 
         # Gaming
         prismlauncher
